@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   get '/index' => 'users#index'
   get '/show' => 'users#show'
-  get '/new' => 'users#new'
+  POST '/new' => 'users#new'
   get '/create' => 'users#create'
   get '/edit' => 'users#edit'
   get '/update' => 'users#update'
