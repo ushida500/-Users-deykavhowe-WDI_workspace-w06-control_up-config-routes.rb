@@ -40,6 +40,9 @@
 
     }
 
+  .button-primary2 {
+    background-color: #000066;
+  }
   </style>
 </head>
 
@@ -65,7 +68,9 @@
         <label for="passwordField">Your password</label>
         <input type="text" placeholder="password" id="passwordField">
 
-        <button class="button-primary" type="Sign Up" value="Send">Sign Up!</button>
+        <button class="button-primary" type="Sign Up" value="Send"><%= link_to 'Sign Up!', root_path %></button>
+
+        <button class="button-primary2" type="Sign Up" value="Send"><%= link_to 'Back to Home', root_path %></button>
       </fieldset>
     </form>
   </div>

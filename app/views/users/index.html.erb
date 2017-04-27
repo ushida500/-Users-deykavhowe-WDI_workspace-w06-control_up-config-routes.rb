@@ -17,16 +17,17 @@
           border-radius: 10px;
         }
 
-        h1 {
-          color: #000066;
-          text-align: center;
-        }
-
         h2 {
+          padding: 20px 0 0 0;
           margin: 120px 0 0 0;
           text-align: center;
           color: #000066;
           font-family: 'Vidaloka', serif;
+        }
+
+        h1 {
+          color: #000066;
+          text-align: center;
         }
 
         h4 {
@@ -36,11 +37,17 @@
         }
 
         .button1 {
-          margin: 0 100px 0 170px;
+          width: 120px;
+          height: 50px;
+          border-radius: 5px;
+          margin: 0 100px 20px 100px;
         }
 
         .button2 {
-
+          width: 120px;
+          height: 50px;
+          border-radius: 5px;
+          margin: 0 0 20px 5px;
         }
   </style>
 </head>
@@ -50,12 +57,63 @@
     <h2>Time to get organized!</h2>
     <h1>Control-Up</h1>
 
-    <h4>A simple and convenient app to get organized. You'll get a real sense of accomplishment!</h4>
+    <h4>A simple and convenient app for all your tasks. You'll get a real sense of accomplishment!</h4>
 
     <button class="button1"><%= link_to 'Sign Up', new_user_path %></button>
 
-    <button class="button2"><%= link_to 'Log In', users_path %></button>
+    <button class="button2"><%= link_to 'Log In', root_path %></button>
 
   </div>
-
 </body>
+
+
+
+<!-- # This is the tyle of the buttons: -->
+<!-- a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: underline;
+} -->
+<!-- input[type="button" i], input[type="submit" i], input[type="reset" i],
+input[type="file" i]::-webkit-file-upload-button, button {          user agent stylesheet
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px system-ui;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+Inherited from div#container
+(index):31
+#container {
+    width: 45%;
+    height: 60%;
+    margin: 0 auto;
+    background-color: #e5e5e5;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+    border-radius: 10px;
+} -->
