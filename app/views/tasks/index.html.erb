@@ -1,0 +1,13 @@
+<!-- # Aqui van todas las tasks -->
+
+<% @task.each do |t| %>
+  <article>
+    <%= link_to t_title, tasks_path(t) %>
+  </article>
+<%end%>
+
+
+<!-- <%= This is the tasks_path %> -->
+<%= link_to 'Back To My Tasks!', tasks_path %>
+<%= link_to 'Edit', edit_tasks_path(@task) %>
+<%= link_to 'Delete', tasks_path(@task), method: 'DELETE' %>
