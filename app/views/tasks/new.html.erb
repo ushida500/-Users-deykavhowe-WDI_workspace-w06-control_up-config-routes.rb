@@ -1,17 +1,29 @@
-<h1>These are my tasks for today!</h1>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Vidaloka" rel="stylesheet">
+  <style type="text/css">
+    h1 {
+      color: #000066;
+    }
 
-<%= form_for :task, url: tasks_path do |f| %>
+  </style>
+
+</head>
+
+<body>
+  <h1>These are my tasks for today!</h1>
+
+    <%= form_for :task, url: tasks_path do |f| %>
   <p>
-  <%= f.label :name %><br>
-  <%= f.text_field :name %>
+    <%= f.label :title %><br>
+    <%= f.text_field :tasks %>
   </p>
 
   <p>
     <%= f.submit "Add task", class: "btn btn-large btn-primary" %>
   </p>
+</body>
 <% end %>
-
-
 
 <!-- <%= form_for :article do |f| %>
   <p>

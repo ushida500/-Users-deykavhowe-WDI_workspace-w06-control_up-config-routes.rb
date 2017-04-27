@@ -1,2 +1,61 @@
-<h2>Time to get organized!</h2>
-<h1>It's ControlUp Time</h1>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Vidaloka" rel="stylesheet">
+  <style type="text/css">
+      body {
+          background-image: url(http://inspirationfeed.com/wp-content/uploads/2015/06/Free-pattern-by-Volodymyr-Kurbatov.png);
+          background-size: 100%;
+        }
+
+        #container {
+          width: 45%;
+          height: 60%;
+          margin: 0 auto;
+          background-color: #e5e5e5;
+          font-family: 'Alfa Slab One', cursive;
+          font-size: 25px;
+          border-radius: 10px;
+        }
+
+        h1 {
+          color: #000066;
+          text-align: center;
+        }
+
+        h2 {
+          margin: 120px 0 0 0;
+          text-align: center;
+          color: #000066;
+          font-family: 'Vidaloka', serif;
+        }
+
+        h4 {
+          text-align: center;
+          color: #000066;
+          font-family: 'Vidaloka', serif;
+        }
+
+        .button1 {
+          margin: 0 100px 0 170px;
+        }
+
+        .button2 {
+
+        }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h2>Time to get organized!</h2>
+    <h1>Control-Up</h1>
+
+    <h4>A simple and convenient app to get organized. You'll get a real sense of accomplishment!</h4>
+
+    <button class="button1"><%= link_to 'Sign Up', new_user_path %></button>
+
+    <button class="button2"><%= link_to 'Log In', users_path %></button>
+
+  </div>
+
+</body>

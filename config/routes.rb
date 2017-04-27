@@ -1,16 +1,15 @@
 Rails.application.routes.draw do
 
-  get '/index' => 'users#index'
-  get '/show' => 'users#show'
-  POST '/new' => 'users#new'
-  get '/create' => 'users#create'
-  get '/edit' => 'users#edit'
-  get '/update' => 'users#update'
-  get '/destroy' => 'users#destroy'
-
-  POST '/new' => 'tasks#new'
-  get '/create' => 'tasks#create'
-  get '/destroy' => 'tasks#destroy'
+  # get '/index' => 'users#index'
+  # get '/show' => 'users#show'
+  # get '/new' => 'users#new'
+  # get '/create' => 'users#create'
+  # get '/edit' => 'users#edit'
+  # get '/update' => 'users#update'
+  # get '/destroy' => 'users#destroy'
+  root 'users#index'
+  resources :users
+  resources :tasks
 end
 
 # Prefix Verb URI Pattern              Controller#Action

@@ -1,2 +1,73 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<head>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Vidaloka" rel="stylesheet">
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+  <!-- Milligram CSS minified -->
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+  <!-- You should properly set the path from the main file. -->
+  <style type="text/css">
+
+    #container {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #000066;
+      font-family: 'Alfa Slab One', cursive;
+      font-size: 50px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #000066;
+      font-family: 'Vidaloka', serif;
+      font-size: 25px;
+    }
+
+    .form1 {
+      color: #000066;
+    }
+
+    .button-primary {
+      background-color: #000066;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to Control-Up!</h1>
+  <h2>Do your lists,</h2>
+  <h2>do your tasks,</h2>
+  <h2>and never forget anything again!</h2>
+
+  <div id="container">
+    <form class="form1">
+      <fieldset>
+        <label for="nameField">First and last name</label>
+        <input type="text" placeholder="name" id="nameField">
+        <label for="emailField">Email</label>
+        <input type="text" placeholder="email" id="emailField">
+        <label for="locationField">Location</label>
+        <input type="text" placeholder="location" id="locationField">
+        <label for="careerField">Career</label>
+        <input type="text" placeholder="career" id="careerField">
+        <label for="websiteField">Favorite website</label>
+        <input type="text" placeholder="website" id="websiteField">
+        <label for="passwordField">Your password</label>
+        <input type="text" placeholder="password" id="passwordField">
+
+        <button class="button-primary" type="Sign Up" value="Send">Sign Up!</button>
+      </fieldset>
+    </form>
+  </div>
+
+</body>
